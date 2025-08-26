@@ -1,0 +1,101 @@
+.container {
+	width: 70px;
+	min-height: 100vh;
+	background-color: var(--background-accent);
+}
+
+.container .menu {
+	margin: 6px 6px 0;
+	min-height: calc(100vh - 6px);
+	background-color: var(--shadow-color);
+	border-radius: var(--radius) var(--radius) 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 0;
+}
+
+.container .menu .image {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 50px;
+}
+
+.container .menu .image img {
+	width: 100%;
+	height: fit-content;
+	border-radius: 25px;
+}
+
+.container .menu .links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.container .menu .links a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: var(--radius);
+	transition:
+		transform 300ms,
+		background-color 200ms;
+}
+
+.container .menu .links a.active {
+	background-color: var(--background-accent);
+}
+
+.container .menu .links a.active:hover {
+	background-color: var(--background-accent);
+}
+
+.container .menu .links a:hover {
+	background-color: var(--shadow-color);
+}
+
+.container .menu .links a:active {
+	transform: scale(0.9);
+}
+
+.container .menu .links a svg {
+	width: 32px;
+	height: 32px;
+	fill: var(--text-primary);
+}
+
+.container .menu .logout {
+	margin-top: auto;
+}
+
+.container .menu .logout button {
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: var(--radius);
+	transition:
+		transform 300ms,
+		background-color 200ms;
+}
+
+.container .menu .logout button:hover {
+	background-color: var(--error);
+	color: var(--text-white);
+}
+
+.container .menu .logout button:active {
+	transform: scale(0.9);
+}
+
+.container .menu .logout button svg {
+	width: 32px;
+	height: 32px;
+	fill: var(--text-primary);
+}

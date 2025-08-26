@@ -1,0 +1,44 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	background-color: var(--color-primary);
+	color: var(--text-white);
+	font-size: 16px;
+	height: 40px;
+	width: 100%;
+	border-radius: var(--radius);
+	transition:
+		background-color 200ms,
+		transform 200ms;
+}
+
+.container:hover {
+	background-color: var(--color-primary-hover);
+}
+
+.container:active {
+	transform: scale(0.95);
+}
+
+.container svg {
+	height: 23px;
+	width: 23px;
+}
+
+.cancel {
+	background-color: var(--error);
+}
+
+.cancel:hover {
+	background-color: var(--error-hover);
+}
+
+.disabled,
+.disabled:hover,
+.disabled:active {
+	background-color: var(--text-disabled);
+	transform: none;
+	cursor: not-allowed;
+}

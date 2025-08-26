@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	font-family: "Poppins", sans-serif;
+}
+
+button {
+	cursor: pointer;
+}
+
+:root {
+	/* Cores primárias */
+	--color-primary: #2b6cb0; /* Azul forte */
+	--color-primary-hover: #2c5282; /* Azul escuro para hover */
+	--color-primary-light: #bee3f8; /* Azul claro (fundo ou badge) */
+
+	/* Cores secundárias */
+	--color-secondary: #805ad5; /* Roxo */
+	--color-secondary-hover: #6b46c1;
+	--color-secondary-light: #e9d8fd;
+
+	/* Texto */
+	--text-primary: #1a202c; /* Preto suave */
+	--text-secondary: #4a5568; /* Cinza médio */
+	--text-disabled: #a0aec0; /* Cinza claro */
+	--text-white: #ffffff; /* Branco */
+
+	/* Fundos */
+	--background-primary: #ffffff;
+	--background-secondary: #f7fafc;
+	--background-accent: #edf2f7; /* Para cards, menus, etc. */
+
+	/* Borda / Divisores */
+	--border-color: #e2e8f0;
+
+	/* Estados / Feedback */
+	--success: #38a169;
+	--error: #e53e3e;
+	--error-hover: #be2828;
+	--warning: #dd6b20;
+	--info: #3182ce;
+
+	/* Outros */
+	--shadow-color: rgba(0, 0, 0, 0.1);
+	--radius: 0.5rem;
+}

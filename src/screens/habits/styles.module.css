@@ -1,0 +1,159 @@
+.container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.content {
+	min-height: 100vh;
+	border-right: 2px solid var(--border-color);
+	padding: 20px;
+}
+
+.content .input {
+	width: 100%;
+	border: 2px solid var(--border-color);
+	border-radius: var(--radius);
+	margin: 40px 0;
+	display: flex;
+	align-items: center;
+}
+
+.content .input:focus-within {
+	border-color: var(--color-primary);
+}
+
+.content .input input {
+	width: 100%;
+	height: 36px;
+	outline: none;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0 10px;
+	background-color: transparent;
+	color: var(--text-primary);
+}
+
+.content .input svg {
+	width: 24px;
+	height: 24px;
+}
+
+.content .input button {
+	background-color: transparent;
+	height: -webkit-fill-available;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.content .input button svg {
+	transition:
+		transform 300ms,
+		fill 200ms;
+}
+
+.content .input button:hover svg {
+	transform: translateX(8px);
+	fill: var(--color-primary);
+}
+
+.content .input button:active svg {
+	transform: translateX(16px);
+}
+
+.content .list .habit {
+	border-bottom: 2px solid var(--border-color);
+	padding: 6px 3px 4px;
+	display: flex;
+	justify-content: space-between;
+	transition: background-color 200ms;
+}
+
+.content .list .habit:hover {
+	background-color: var(--background-accent);
+}
+
+.content .list .habit-active {
+	background-color: var(--background-accent);
+}
+
+.content .list .habit p {
+	color: var(--text-primary);
+	font-size: 16px;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
+
+.content .list .habit div {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+.content .list .habit div input {
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+
+.content .list .habit div button {
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+}
+
+.content .list .habit div button svg {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	user-select: none;
+	transition:
+		fill 100ms,
+		transform 100ms;
+}
+
+.content .list .habit div button:hover svg {
+	fill: var(--error);
+}
+
+.content .list .habit div button:active svg {
+	transform: scale(0.9);
+}
+
+.metrics {
+	min-height: 100vh;
+	padding: 20px;
+}
+
+.metrics h2 {
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--color-secondary);
+}
+
+.metrics .info-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0;
+	gap: 80px;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.metrics .calendar-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.no-metrics {
+	padding: 20px;
+	color: var(--warning);
+	font-size: 16px;
+	font-weight: 700;
+}
